@@ -1,2 +1,2 @@
-include ':app', ':edgedetectorlib'
+include ':app', ':imageProcessing'
 include ':openCVLibrary310'

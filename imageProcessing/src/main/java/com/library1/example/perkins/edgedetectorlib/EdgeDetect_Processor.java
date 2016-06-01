@@ -17,35 +17,28 @@ import org.opencv.imgproc.Imgproc;
  * openCV for android see the following link for install help
  * http://stackoverflow.com/questions/27406303/opencv-in-android-studio
  * <p>Usage:<br>
- EdgeDetector myDetector= new EdgeDetector();<br>
+ EdgeDetect_Processor myDetector= new EdgeDetect_Processor();<br>
  Bitmap bmpOutlined = myDetector.outline_Bitmap(bmpOriginal);<br>
 
  @author Keith Perkins
  */
-public class EdgeDetector {
-    private static final int UNINITIALIZED = -1;
-    private int width = UNINITIALIZED;
-    private int height = UNINITIALIZED;
+public class EdgeDetect_Processor implements Processor {
+
+    private int width = Constants.UNINITIALIZED;
+    private int height = Constants.UNINITIALIZED;
 
     // for the canny edge detection algorithm, play with these to see different results
     private  static final int THRESHOLD_LOW_DEFAULT = 70;
     private  static final int THRESHOLD_HIGH_DEFAULT = 3*70;
-
-    private int threshold_low;
-    private int threshold_high;
-
-    /**
-     * creates with custom Canny thresholds
-     */
-    public EdgeDetector(int threshold_low,int threshold_high){
-        setParams(threshold_low,threshold_high);
-    }
+    private int threshold_low = THRESHOLD_LOW_DEFAULT;
+    private int threshold_high = THRESHOLD_HIGH_DEFAULT;
 
     /**
-     * create with default Canny thresholds
+     * create with width and height we will use for all images
      */
-    public EdgeDetector() {
-        this(THRESHOLD_LOW_DEFAULT,THRESHOLD_HIGH_DEFAULT);
+    public EdgeDetect_Processor(int width, int height) {
+        this.width = width;
+        this.height = height;
     }
 
     /**
@@ -68,15 +61,12 @@ public class EdgeDetector {
      *
      * @exception IllegalArgumentException do not pass in a null bmp_original
      */
-    public Bitmap outline_Bitmap(Bitmap bmp_original){
+    @Override
+    public Bitmap process(Bitmap bmp_original) {
         if (bmp_original ==null)
             throw new IllegalArgumentException(
                     "The provided Bitmap was null; please provide a valid bitmap!");
 
-        if (width == UNINITIALIZED) {
-            width = bmp_original.getWidth();
-            height = bmp_original.getHeight();
-        }
         //create empty MATs
         Mat im_original = new Mat (height, width, CvType.CV_8UC4);
         Mat im_canny= new Mat (height, width, CvType.CV_8UC4);
@@ -105,5 +95,4 @@ public class EdgeDetector {
 
         return bitMap_combined;
     }
-
 }

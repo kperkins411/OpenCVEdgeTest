@@ -10,12 +10,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.library1.example.perkins.opencvedgetest.MainActivity">
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do EdgeDetection"
+        android:id="@+id/checkBox_EdgeDetection"
+        android:layout_gravity="center_horizontal"
+        android:onClick="oncheckBox_EdgeDetection" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do ColorChange"
+        android:id="@+id/checkBox_ColorChange"
+        android:layout_gravity="center_horizontal"
+        android:onClick="oncheckBox_ColorChange" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Text"
+        android:id="@+id/checkBox_Show_Text"
+        android:layout_gravity="center_horizontal"
+        android:onClick="oncheckBox_Show_Text" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Toggle Image Outline"
-        android:id="@+id/button_toggle"
-        android:onClick="doToggle"
+        android:text="Run Pipeline"
+        android:id="@+id/button_RunPipeline"
+        android:layout_gravity="center_horizontal"
+        android:onClick="dobutton_RunPipeline"
          />
 
     <ImageView android:id="@+id/image"
