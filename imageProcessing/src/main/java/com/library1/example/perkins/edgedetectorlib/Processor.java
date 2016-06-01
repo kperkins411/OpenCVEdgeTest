@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 /**
  * Created by Perkins on 5/31/2016.
  */
-public interface Processor {
+interface Processor {
 
     Bitmap process(Bitmap bmp_original);
 }

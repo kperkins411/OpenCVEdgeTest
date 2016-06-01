@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ImageProcessing_Tester/app.iml" filepath="$PROJECT_DIR$/ImageProcessing_Tester/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/OpenCVEdgeTest.iml" filepath="$PROJECT_DIR$/OpenCVEdgeTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageProcessing/edgedetectorlib.iml" filepath="$PROJECT_DIR$/imageProcessing/edgedetectorlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageProcessing/imageProcessing.iml" filepath="$PROJECT_DIR$/imageProcessing/imageProcessing.iml" />
       <module fileurl="file://$PROJECT_DIR$/openCVLibrary310/openCVLibrary310.iml" filepath="$PROJECT_DIR$/openCVLibrary310/openCVLibrary310.iml" />
     </modules>
   </component>

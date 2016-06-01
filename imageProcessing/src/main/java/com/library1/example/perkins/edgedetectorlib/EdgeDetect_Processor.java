@@ -19,10 +19,11 @@ import org.opencv.imgproc.Imgproc;
  * <p>Usage:<br>
  EdgeDetect_Processor myDetector= new EdgeDetect_Processor();<br>
  Bitmap bmpOutlined = myDetector.outline_Bitmap(bmpOriginal);<br>
+ * Note that this is package private and thus not accessible outside of this package<BR>
 
  @author Keith Perkins
  */
-public class EdgeDetect_Processor implements Processor {
+class EdgeDetect_Processor implements Processor {
 
     private int width = Constants.UNINITIALIZED;
     private int height = Constants.UNINITIALIZED;

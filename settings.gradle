@@ -1,2 +1,2 @@
-include ':app', ':imageProcessing'
+include ':ImageProcessing_Tester', ':imageProcessing'
 include ':openCVLibrary310'
