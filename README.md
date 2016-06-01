@@ -1,6 +1,6 @@
 # ImageProcessing and ImageProcessing_Tester
 <p><B>Description:</b><br>
-<p><b>ImageProcessing_Tester</b> tester for ImageProcessing pipeline
+<p><b>ImageProcessing_Tester</b> tester for ImageProcessing pipeline<br>
 ![My image](https://github.com/kperkins411/OpenCVEdgeTest/blob/master/Tester.png)
 <p><b>ImageProcessing</b> Flexible image processing pipeline.  Creates a list of classes that implement the Processor interface
  And then executes each classes process(..) method in Image_Pipeline.Process()
