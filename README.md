@@ -6,7 +6,7 @@ tester for ImageProcessing pipeline.  Lets you choose which filters(processors) 
 ![My image](https://github.com/kperkins411/OpenCVEdgeTest/blob/master/Tester1.png)
 
 <p><b>ImageProcessing</b> 
-<B><p>Note that Image_Pipeline.java is the ONLY class in this package visible to other packages (the rest are package private)<BR>
+<B><p>Note that Image_Pipeline.java is the ONLY class in this package visible to other packages (the rest are package private). 
  This restricted API should make it easier to use since you have only one available class</B><BR>
  <p>Flexible image processing pipeline.  Creates a list of classes that implement the Processor interface
  And then executes each classes process(..) method in Image_Pipeline.Process().
