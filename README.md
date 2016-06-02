@@ -1,8 +1,9 @@
 # ImageProcessing and ImageProcessing_Tester
 <p><B>Description:</b><br>
 <p><b>ImageProcessing_Tester</b><br>
-tester for ImageProcessing pipeline<br>
+tester for ImageProcessing pipeline.  Lets you choose which filters(processors) will be applied to an image. Two views of the processed image   <br>
 ![My image](https://github.com/kperkins411/OpenCVEdgeTest/blob/master/Tester.png)
+![My image](https://github.com/kperkins411/OpenCVEdgeTest/blob/master/Tester1.png)
 
 <p><b>ImageProcessing</b> 
 <B><p>Note that this is the ONLY class in this package visible to other packages.<BR>
