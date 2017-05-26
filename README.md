@@ -3,8 +3,8 @@
 <p> A class that performs a list of user selected transforms on bitmapss and a tester.
 <p><b>ImageProcessing_Tester</b><br>
 tester for ImageProcessing pipeline.  Lets you choose which filters(processors) will be applied to an image. Two views of the processed image   <br>
-![My image](https://github.com/kperkins411/OpenCVEdgeTest/blob/master/Tester.png)
-![My image](https://github.com/kperkins411/OpenCVEdgeTest/blob/master/Tester1.png)
+<img src="https://github.com/kperkins411/OpenCVEdgeTest/blob/master/Tester.png" width="200" height="200" />
+<img src="https://github.com/kperkins411/OpenCVEdgeTest/blob/master/Tester1.png" width="200" height="200" />
 
 <p><b>ImageProcessing</b> 
 <B><p>Note that Image_Pipeline.java is the ONLY class in this package visible to other packages (the rest are package private). 
